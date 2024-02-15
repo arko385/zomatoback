@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const mongoose=require("mongoose");
-const port = 3000;
+const port = process.env.PORT||3000;
 const User=require("./model/user");
 
 //const monguri="mongodb://127.0.0.1:27017/mydb";
