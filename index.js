@@ -3,6 +3,8 @@ const app = express()
 const mongoose=require("mongoose");
 const port = process.env.PORT||3000;
 const User=require("./model/user");
+const cors=require("cors");
+app.use(cors());
 
 //const monguri="mongodb://127.0.0.1:27017/mydb";
 const monguri="mongodb+srv://ramkrishnasarkar12175:1GleQf4X7fTeyiWL@cluster0.gg9vkzf.mongodb.net/mydb?retryWrites=true&w=majority";
